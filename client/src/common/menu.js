@@ -4,6 +4,12 @@ const menu = [
     name: 'overview',
     path: '/',
     icon: null
+  },
+  {
+    title: '简爱',
+    name: 'overview',
+    path: '/',
+    icon: null
   }
 ]
 export default menu

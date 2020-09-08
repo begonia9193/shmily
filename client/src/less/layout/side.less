@@ -3,18 +3,41 @@
 .@{layout-side-prefix} {
   background: @color-lg-peach;
   height: 100%;
-  width: 120px;
+  width: 100px;
   .item-center {
     display: flex;
     justify-content: center;
   }
   &-menu {
-    padding: 80px 0 0 0;
+    padding: 80px 0px 0;
     list-style: none;
     .item-center();
+    flex-wrap: wrap;
     .menu-item {
-      padding: 5px 15px;
-      background: #B5FFFC;
+      width: 100%;
+      letter-spacing: 2px;
+      text-align: center;
+      padding: 6px 0;
+      user-select: none;
+      cursor: pointer;
+      margin-bottom: 15px;
+      position: relative;
+      overflow: hidden;
+      .menu-action {
+        color: @marca-blue;
+      }
+      &:hover {
+        background: rgba(142, 197, 252, 0.2);
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: @marca-blue;
+      }
     }
   }
 }
