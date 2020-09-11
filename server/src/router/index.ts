@@ -1,7 +1,13 @@
-const Router = require('koa-router')
+import Router from 'koa-router'
+import fs from 'fs'
+import path from 'path'
+
+import login from './login'
+import user from './user'
+
 const router = new Router()
 
-const loginRoutes = require('./login.ts')
+router.use('/login', login.routes(), login.allowedMethods())
+router.use('/user', user.routes(), user.allowedMethods())
 
-module.exports = router
-export {}
+export default router

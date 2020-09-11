@@ -1,5 +1,5 @@
-const app = require('./src/app.ts')
-const chalk = require('chalk')
+import app from './src/app'
+import chalk from 'chalk'
 
 const port = process.env.PORT || 8089
 

@@ -1,11 +1,9 @@
-const Router = require('koa-router')
-const loginRouter = new Router({
-  prefix: 'login'
-})
+import Router from 'koa-router'
 
-loginRouter.post('/', async ctx => {
+const loginRouter = new Router()
+
+loginRouter.post('/', async (ctx) => {
   ctx.body = 'login router'
 })
 
-module.exports = loginRouter.routes()
-export {}
+export default loginRouter

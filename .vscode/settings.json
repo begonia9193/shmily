@@ -4,6 +4,7 @@
   "prettier.jsxSingleQuote": true,
   "prettier.semi": false,
   "prettier.jsxBracketSameLine": true,
+  "prettier.arrowParens": "avoid",
   "path-intellisense.mappings": {
     "@": "${workspaceRoot}/src"
   }
