@@ -5,10 +5,12 @@
   "main": "server.ts",
   "dependencies": {
     "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
     "mongoose": "^5.10.0"
   },
   "devDependencies": {
     "@types/koa": "^2.11.3",
+    "@types/koa-router": "^7.4.1",
     "@types/mongoose": "^5.7.36",
     "chalk": "^4.1.0",
     "dotenv": "^8.2.0",
@@ -17,8 +19,9 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "start": "nodemon server.ts",
-    "build": "rm -rf dist/* && tsc && node server.js prod"
+    "start": "ts-node server.ts",
+    "watch": "nodemon server.ts",
+    "build": "rm -rf dist/* && tsc && node dist/server.js prod"
   },
   "repository": {
     "type": "git",
