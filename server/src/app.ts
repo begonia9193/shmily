@@ -8,7 +8,7 @@ dotenv.config({ path: EnvPath }) // 根据环境加载环境变量
 
 const dbPath = process.env.MONGODB_URL
 const app = new Koa();
-console.log(router.routes, router.allowedMethods)
-app.use(router.routes())
+// 注册路由
+app.use(router.routes()).use(router.allowedMethods())
 
 export default app
