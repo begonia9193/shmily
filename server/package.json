@@ -6,12 +6,12 @@
   "dependencies": {
     "koa": "^2.13.0",
     "koa-router": "^9.4.0",
-    "mongoose": "^5.10.0"
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "@types/koa": "^2.11.3",
     "@types/koa-router": "^7.4.1",
-    "@types/mongoose": "^5.7.36",
+    "@types/mysql": "^2.15.15",
     "chalk": "^4.1.0",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.4",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "ts-node server.ts",
-    "watch": "nodemon server.ts",
+    "dev": "nodemon server.ts",
     "build": "rm -rf dist/* && tsc && node dist/server.js prod"
   },
   "repository": {
