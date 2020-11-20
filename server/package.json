@@ -7,7 +7,9 @@
     "@koa/router": "^10.0.0",
     "koa": "^2.13.0",
     "module-alias": "^2.2.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.29"
   },
   "devDependencies": {
     "@types/koa": "^2.11.3",
@@ -37,7 +39,7 @@
     "love",
     "love show"
   ],
-  "author": "begonia<http://begonia9193.gitee.io>",
+  "author": "begonia<http://begonia.cool>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/begonia9193/shmily-server/issues"
@@ -47,5 +49,7 @@
     "@root": "./",
     "@src": "src"
   },
-  "_moduleDirectories": ["node_modules_custom"]
+  "_moduleDirectories": [
+    "node_modules_custom"
+  ]
 }

@@ -7,7 +7,7 @@
   "prettier.arrowParens": "avoid",
   "path-intellisense.mappings": {
     "@": "${workspaceRoot}/src",
-    "@src": "${workspaceRoot}/service/src",
+    "@src": "${workspaceRoot}/src",
   },
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.extensionOnImport": true,
